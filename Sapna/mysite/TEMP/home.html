@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Portal</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        h1 {
+            font-weight: bold;
+            color: #0d0a0d;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        .form-control {
+            width: 50%;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>STUDENT DATA</h1>
+
+        <form method="get" action="{% url 'index' %}">
+            <div class="form-group">
+                <label for="birthday_person">REG NO#    : </label>
+                <input type="text"  id="name" name="name" placeholder="Enter Reg no">
+            </div>
+            <div class="form-group">
+                <label for="birthday_person">STUDENT NAME:</label>
+                <input type="text"  id="reg" name="reg" placeholder="Enter Student Name">
+            </div>
+            <div class="form-group">
+                <label for="birthday_person">DEPARTMENT:</label>
+                <input type="text"  id="dept" name="dept" placeholder="Enter Department Name">
+            </div>
+
+            <button type="submit" class="btn btn-dark">Submit</button>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
